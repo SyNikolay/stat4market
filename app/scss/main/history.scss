@@ -1,0 +1,163 @@
+.history {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: #331A2F;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 58px;
+  }
+
+  &__first-path {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  &__first-path-image {
+    margin: 0 auto  35px;
+    width: 269px;
+    height: 265px;
+  }
+
+  &__first-path-text {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  &__second-path {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__second-path-image {
+    margin: 0 auto 30px;
+    width: 268px;
+    height: 270px;
+  }
+
+  &__second-path-text {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  &__second-path-text:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $tablet-width)  {
+  .history {
+    &__title {
+      font-size: 40px;
+      line-height: 64px;
+      margin-bottom: 88px;
+    }
+
+    &__first-path  {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 64px;
+    }
+
+    &__first-path-image {
+      margin: 0;
+    }
+
+    &__first-path-content {
+      width: 58%;
+    }
+
+    &__first-path-text {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &__second-path {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      picture {
+        order:2;
+      }
+    }
+
+    &__second-path-image {
+      margin: 0;
+    }
+
+    &__second-path-content {
+      width: 58%;
+    }
+
+    &__second-path-text {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &__second-path-text:first-child {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .history {
+    &__container {
+      width: 83%;
+      margin: 0 auto;
+    }
+
+    &__title {
+      max-width: 652px;
+      margin: 0 auto 96px;
+    }
+
+    &__first-path-image  {
+      width: 350px;
+      height: 344px;
+    }
+
+    &__second-path-image  {
+      width: 356px;
+      height: 358px;
+    }
+  }
+}
+
+@media (min-width: $large-width) {
+  .history {
+    &__title {
+      max-width: 844px;
+      font-size: 48px;
+      margin: 0 auto 100px;
+    }
+
+    &__first-path-image  {
+      width: 454px;
+      height: 446px;
+    }
+
+    &__first-path-text {
+      font-size: 25px;
+      line-height: 40px;
+    }
+
+    &__second-path-image  {
+      width: 471px;
+      height: 474px;
+    }
+
+    &__second-path-text {
+      font-size: 25px;
+      line-height: 40px;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.navigation {
+
+  &__item {
+    display: none;
+  }
+
+  &__enter {
+    display: flex;
+    align-items: center;
+  }
+
+  &__enter-button {
+    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    font-size: 14px;
+    line-height: 27px;
+    background-color: #CF51CE;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    padding: 4px 20px 4px 41px;
+    margin-right: 22px;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 13px;
+      height: 13px;
+      left: 20px;
+      top: 50%;
+      margin-top: -6px;
+      background: url(../../images/header/menu-enter.svg) no-repeat center;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+
+    &__item {
+      display: none;
+      cursor: pointer;
+    }
+
+    &__enter-button {
+      position: relative;
+      font-size: 20px;
+      line-height: 35px;
+      font-weight: 500;
+      background-color: #CF51CE;
+      color: #fff;
+      border-radius: 12px;
+      border: none;
+      padding: 4px 32px 4px 66px;
+      margin-right: 79px;
+  
+      &::before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 20px;
+        height: 20px;
+        left: 33px;
+        top: 50%;
+        margin-top: -10px;
+        background: url(../../images/header/menu-enter.svg) no-repeat center;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    flex: 1 1 auto;
+    &__list {
+      display: flex;
+      align-items: center;
+    }
+
+    &__item {
+      display: block;
+      color: $link-color;
+      font-size: 18px;
+      line-height: 35px;
+    }
+
+    &__enter-button {
+      font-size: 18px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $large-width) {
+  .navigation {
+    &__item {
+      font-size: 24px;
+    } 
+    &__enter-button {
+      font-size: 23px;
+      padding: 4px 32px 4px 69px;
+      &::before {
+        width: 23px;
+        height: 23px;
+        margin-top: -12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@media (min-width: $desktop-width) {
+  .analitic {
+    margin-right: 40px;
+
+    &__link {
+      position: relative;
+      &:hover {
+        color: #da3cda;
+      }
+    }
+
+    &__link-svg {
+      width: 11px;
+      height: 8px;
+      fill: #331A2F;
+      margin: 0px 0px 0px 7px;
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $large-width) {
+  .analitic {
+    margin-right: 50px;
+  }
+}
+
+.analitic__link:hover .analitic__link-svg {
+  fill: #da3cda;
+}

@@ -1,0 +1,83 @@
+
+@import "variables.scss";
+
+@import "header/header.scss";
+@import "header/header-analitic.scss";
+@import "header/header-navigation.scss";
+@import "header/header-logo.scss";
+@import "header/burger-button.scss";
+
+@import "main/main.scss";
+@import "main/bread-crumbs.scss";
+@import "main/courses.scss";
+@import "main/history.scss";
+@import "main/teaching.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease 0.2s;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+html {
+  height: 100%;
+}
+.body {
+  height: 100%;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  color: $text-color;
+  background-color: #FAFAFA;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 15px 29px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    padding-bottom: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .body {
+    background: url(../images/circle-left-desktop.svg) top left no-repeat;
+  }
+  .wrapper {
+    padding: 0 40px 121px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .body {
+    background: url(../images/circle-left-large.svg) top left no-repeat,
+                url(../images/circle-right-large.svg) top 400px right 0 no-repeat;
+  }
+  .wrapper {
+    padding: 0 40px 131px;
+  }
+}

@@ -1,0 +1,29 @@
+.bread-crumbs {
+  display: flex;
+
+  &__link {
+    position: relative;
+    margin-right: 8px;
+    padding-right: 18px;
+    color: rgba(51, 26, 47, 0.5);
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.bread-crumbs__item:first-child .bread-crumbs__link::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 10px;
+  height: 1px;
+  background-color: rgba(51, 26, 47, 0.5);
+  right: 0;
+  top: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .bread-crumbs {
+    
+  }
+}

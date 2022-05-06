@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Document</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__logo logo">
+        <div class="logo__image">
+          <a href="https://stat4market.com/">
+            <img class="logo__image-picture" src="./images/header/stat4market-logo.svg" alt="Logo.">
+          </a>
+        </div>
+        <div class="logo__subtitle">
+          <p class="logo__subtitle-text">Надежный сервис<br>
+            аналитики для поставщиков<br>
+            на маркетплейсы</p>
+        </div>
+      </div>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item analitic">
+            <p class="analitic__link">Аналитика
+              <svg class="analitic__link-svg">
+                <use xlink:href="images/sprite.svg#tringle"></use>
+              </svg>
+            </p>
+            <ul class="analitic__menu">
+              <li class="analitic__menu-item">menu-item 1</li>
+              <li class="analitic__menu-item">menu-item 2</li>
+              <li class="analitic__menu-item">menu-item 3</li>
+            </ul>
+          </li>
+          <li class="navigation__item teaching">
+            <a href="#" class="teaching__link">Обучение</a>
+          </li>
+          <li class="navigation__item phone">
+            <a href="tel: 84994503141" class="phone__link">
+              <svg class="phone__link-svg">
+                <use xlink:href="images/sprite.svg#phone"></use>
+              </svg>
+              8 (499) 450-31-41</a>
+          </li>
+          <li class="navigation__enter">
+            <button class="navigation__enter-button">Войти</button>
+            <button class="header__burger-button burger-button" type="button">
+              <span class="burger-button__line">
+                <span class="visually-hidden">Кнопка меню.</span>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <ul class="main__bread-crumbs bread-crumbs">
+        <li class="bread-crumbs__item">
+          <a href="#" class="bread-crumbs__link">Главная</a>
+        </li>
+        <li class="bread-crumbs__item">
+          <a href="#" class="bread-crumbs__link">Обучение</a>
+        </li>
+      </ul>
+      <section class="main__courses courses">
+        <div class="courses__title-container">
+          <h1 class="courses__title"><span class="courses__selected-text">Обучающие курсы</span> для поставщиков на
+            маркетплейсы</h1>
+        </div>
+        <div class="courses__image">
+          <picture>
+            <source media="(min-width: 1280px)"
+              srcset="./images/main/courses/superman-desktop.png 1x, ./images/main/courses/superman-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="./images/main/courses/superman-tablet.png 1x, ./images/main/courses/superman-tablet@2x.png 2x">
+            <img class="courses__image-man" src="./images/main/courses/superman-mobile.png"
+              srcset="./images/main/courses/superman-mobile@2x.png 2x" alt="Superman.">
+          </picture>
+        </div>
+        <div class="courses__price">
+          <p class="courses__price-content">от <span class="courses__selected-price"> 19 900</span> ₽</p>
+        </div>
+        <div class="courses__description">
+          <p class="courses__description-content">
+            Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров
+          </p>
+          <p class="courses__description-content">
+            Добро пожаловать в Академию. Это место для эффективного обучения, где мы рассказываем, как работают
+            маркетплейсы и никогда не вдаемся в теорию, которая не понадобится на практике.
+          </p>
+          <p class="courses__description-content">
+            Наши уроки помогут понять логику работы площадок и взять управление продажами в свои руки, а не действовать
+            наугад. Становись экспертом в работе с маркетплейсами и увеличивай свою прибыль — мы разработали курсы,
+            которые приведут тебя к результату быстро и захватывающе.
+          </p>
+        </div>
+      </section>
+      <section class="main__history history">
+        <div class="history__container">
+          <h2 class="history__title">Как работает модуль Аналитика по API для Wildberries?</h2>
+          <div class="history__first-path">
+            <picture>
+              <source
+                srcset="./images/main/history/first-path-large.webp 1x, ./images/main/history/first-path-large@2x.webp 2x">
+              <img class="history__first-path-image" src="./images/main/history/first-path-desktop.png"
+                srcset="./images/main/history/first-path-desktop@2x.png" alt="Superman.">
+            </picture>
+            <div class="history__first-path-content">
+              <p class="history__first-path-text">Свой путь в бизнесе мы начали в 2016 г. У нас были свои островные
+                магазины в крупных ТЦ Москвы («Европейский», «Метрополис», «Мега» и др.), а также свой интернет-магазин.
+                Мы накопили большой опыт в продвижении своих товаров за счет многочисленных запусков разных рекламных
+                каналов и работы с блогерами.</p>
+            </div>
+          </div>
+          <div class="history__second-path">
+            <picture>
+              <source
+                srcset="./images/main/history/second-path-large.webp 1x, ./images/main/history/second-path-large@2x.webp 2x">
+              <img class="history__second-path-image" src="./images/main/history/second-path-large.png"
+                srcset="./images/main/history/second-path-large@2x.png" alt="Superman.">
+            </picture>
+            <div class="history__second-path-content">
+              <p class="history__second-path-text">Летом 2019 года мы вышли на маркетплейсы и после работы с ними в
+                течение 2 месяцев приняли решение развивать только это направление. И не прогадали. Весь накопленный
+                опыт
+                мы направили на улучшение и продвижение наших брендов.</p>
+              <p class="history__second-path-text">Пришло время поделится знаниями и лайфхаками, которые будут собраны и
+                доступны в нашей Академии stat4market.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__teaching teaching">
+        <div class="teaching__container">
+          <div class="teaching__header">
+            <h2 class="teaching__title">Обучение по продажам на маркетплейсах от <span
+                class="teaching__title-style">stat<span class="teaching__number-style">4</span>market</span></h2>
+            <p class="teaching__subtitle">«Увеличение реальной прибыли, конкретика и ключевые инструменты, которые дают
+              результат» — на этом тезисе созданы наши курсы</p>
+          </div>
+        </div>
+        <div class="teaching__privelege-container">
+          <ul class="teaching__privelege-list">
+            <li class="teaching__privelege-item">
+              <img src="./images/main/teaching/target-icon.svg" alt="" class="teaching__privelege-image">
+              <h3 class="teaching__privelege-title">Наше обучение построено очень лаконично и просто</h3>
+              <p class="teaching__privelege-subtitle">Все занятия короткие по продолжительности для легкого восприятия и
+                понимания. Мы даем в уроках только конкретику, без лишней теории и “воды”.</p>
+            </li>
+            <li class="teaching__privelege-item">
+              <img src="./images/main/teaching/information-icon.svg" alt="" class="teaching__privelege-image">
+              <h3 class="teaching__privelege-title">Ко всем урокам есть дополнительные материалы</h3>
+              <p class="teaching__privelege-subtitle">Презентации, краткие инструкции, чек-листы и памятки по работе с
+                маркетплейсами.</p>
+            </li>
+            <li class="teaching__privelege-item">
+              <img src="./images/main/teaching/practic-icon.svg" alt="" class="teaching__privelege-image">
+              <h3 class="teaching__privelege-title">Наше обучение — практико-ориентированное</h3>
+              <p class="teaching__privelege-subtitle">Поэтому после прохождения уроков ты будешь выполнять задания,
+                которые помогут тебе закрепить полученные знания на практике.</p>
+            </li>
+            <li class="teaching__privelege-item">
+              <img src="./images/main/teaching/creators-icon.svg" alt="" class="teaching__privelege-image">
+              <h3 class="teaching__privelege-title">Создатели нашей Академии</h3>
+              <p class="teaching__privelege-subtitle">Действующие селлеры с большим опытом в продажах на маркетплейсах,
+                эксперты компании stat4market, а также профессиональные лекторы и методологи.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div style="display: none;">
+
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

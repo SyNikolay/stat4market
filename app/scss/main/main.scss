@@ -1,0 +1,52 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  &__bread-crumbs {
+    margin-bottom: 44px;
+  }
+
+  &__courses {
+    margin-bottom: 85px;
+  }
+
+  &__history {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main {
+    &__bread-crumbs {
+      margin-bottom: 15px;
+    }
+
+    &__courses {
+      margin-bottom: 65px;
+    }
+
+    &__history {
+      margin-bottom: 120px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main {
+    &__courses {
+      margin-bottom: 77px;
+    }
+
+    &__history {
+      margin-bottom: 140px;
+    }
+  }
+}
+
+@media (min-width: $large-width) {
+  .main {
+    &__courses {
+      margin-bottom: 145px;
+    }
+  }
+}
