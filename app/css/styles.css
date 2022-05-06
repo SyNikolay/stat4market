@@ -29,8 +29,8 @@
 }
 
 .phone__link-svg {
-  width: 15px;
-  height: 15px;
+  width: 19px;
+  height: 19px;
   transition: all ease 0.1s;
   margin: 0px 5px -1px 0px;
   fill: #331A2F;
@@ -116,6 +116,9 @@
   padding: 4px 20px 4px 41px;
   margin-right: 22px;
   cursor: pointer;
+}
+.navigation__enter-button:hover {
+  background-color: #ba33b9;
 }
 .navigation__enter-button::before {
   position: absolute;
@@ -797,7 +800,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all ease 0.2s;
+  transition: all ease 0.1s;
 }
 
 ul {

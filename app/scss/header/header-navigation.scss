@@ -23,6 +23,10 @@
     margin-right: 22px;
     cursor: pointer;
 
+    &:hover {
+      background-color: darken(#CF51CE, 10%);
+    }
+
     &::before {
       position: absolute;
       display: block;
